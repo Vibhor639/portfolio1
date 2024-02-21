@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <img src="images1/logo.png" class="logo" alt="abc">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Software Developer</p>
+        <h1>Hi, I am <span>Vibhor</span> <br>Tyagi. </h1>
+        
+    </div>
+</div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images1/IMG_5680.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Versatile and organised professional with strong interpersonal and time management skills. Proven ability to handle multiple priorities with precision and a positive attitude. Eager to contribute to team success, taking on added responsibilities to achieve company goals.
+                    </p>
+                    <div class="tab-titles" >
+                        
+                        <p class="tab-links active-link " onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>C/C++/JAVA/Python</span><br></li>
+                            
+                            <li><span>Data Structure and Algorithums</span><br></li>
+                            <li><span>Object oriented Programming</span><br></li>
+                            <li><span>Artifical Intelligence</span><br></li>
+                            <li><span>Machine Learning</span><br></li>
+                            <li><span>Full Stack Web development</span><br></li>
+                            <li><span>HTML/CSS/JAVASCRIPT</span><br></li>
+                            <li><span>DBMS/MySQL</span><br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>01/09/23 - 30/09/23 </span><br>Software Developer at Prodigy Infotech</li>
+                            
+                            <li><span>01/08/23 - 31/08/23</span><br>C++ Intern at CodSoft</li>
+                       
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021 - Current </span><br>BTECH at MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY , NEW DELHI <br> CGPA(Till 5th sem : 9.258)</li>
+                            
+                            <li><span>2019-2020</span><br>COLUMBIA FOUNDATION SENIOR SECONDARY SCHOOL , NEW DELHI <br>
+                            CLASS 12TH : 96.2%</li>
+                            <li><span>2018-2019</span><br>COLUMBIA FOUNDATION SENIOR SECONDARY SCHOOL , NEW DELHI <br>
+                                CLASS 10TH : 91%</li>
+                       
+                        </ul>
+                    </div>
+
+               
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/CBA.jpg" alt="img1">
+                <div class="layer">
+                    <h3>Movie Booking System</h3>
+                    <p>A cinematic console-based Movie Booking System with interactive seat booking, cancellation, and cost
+                        calculation features using a 2D vector in C++.</p>
+                        <a href="https://github.com/Vibhor639/P1.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/def.jpg" alt="img2">
+                <div class="layer">
+                    <h3>Number Guessing Game</h3>
+                    <p>Engaging Number Guessing Game: Guess the secret number within a specified range, receive hints, and
+                        track your win percentage in this dynamic and interactive game loop.</p>
+                        <a href="https://github.com/Vibhor639/p3.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/xyz.jpg" alt="img3">
+                <div class="layer">
+                    <h3>Contact Management System</h3>
+                    <p>Efficient Contact Manager: Add, view, edit, and delete contacts effortlessly in this user-friendly C++
+                        system.</p>
+                        <a href="https://github.com/Vibhor639/p4.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        
+                </div>
+            </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> vibhortyagi639@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 9643212347</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vibhor.tyagi.374"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/vibhor639/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/i_m_vibh__/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Vibhor639"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="images1/final part 4 resume_removed_compressed.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action=" " name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your E-mail" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+            
+        </div>
+
+    </div>
+<div class="copyright">
+    <p>Copyright @ Vibhor.<i class="fa-solid fa-heart"></i></p>
+</div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+          function opentab(tabname)
+          {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+          }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+  
+            sidemenu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyaHpvLmmitz7RxOjFKYx5cTZR2LZvdsAcMrDboQKiwx-VEDL-SEjFsoytrFtkslbyF/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully!!";
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
